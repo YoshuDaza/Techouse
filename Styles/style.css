@@ -1,0 +1,173 @@
+html{
+    font-size: 95%;
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: #f3f3f3;
+}
+
+.logo{
+    margin-left: 30px;
+    max-width: 120px;
+    max-height: 25px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 8vh;
+    background-color: rgb(16, 34, 43);
+}
+
+.ham{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.ham span{
+    display: block;
+    background-color: #f3f3f3;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.enlaces-menu{
+    display: flex;
+    padding: 0;
+}
+
+.enlaces-menu li{
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.enlaces-menu li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+}
+
+
+.header ol li a:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+
+.button{
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+    margin-right: 40px;
+    border: 2px solid rgb(161, 161, 161);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.button:hover{
+    color: white;
+    border-color: white;
+    transition: 0.5s;
+}
+
+@media (max-width: 950px){
+    body{
+        overflow: hidden;
+    }
+
+.logo{
+    padding-left: 5px;
+}
+
+.ham{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    transition: 0.2s 0.1s;
+}
+
+.ham:hover{
+    transform: rotate(360deg);
+}
+
+nav{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 25px;
+    padding: 25px 0;    
+}
+
+.enlaces-menu{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: none;
+    opacity: 0;
+}
+
+.enlaces-menu li{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.button{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 8vh;
+    width: 15vh;
+    margin: 0;
+    padding: 0;
+    display: none;  
+}
+
+@keyframes muestraMenu{
+    from{opacity: 0;}
+    to{opacity:1;}
+}
+
+.enlaces-menu.activado{
+    display: flex;
+    animation: muestraMenu 350ms ease-in-out both;
+}
+
+.button.Login{
+    display: flex;
+}
+
+.br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado{
+    opacity: 0;
+}
+
+.br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+}
+}   
