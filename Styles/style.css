@@ -21,6 +21,7 @@ body{
     margin-left: 30px;
     max-width: 120px;
     max-height: 25px;
+    
 }
 
 .header{
@@ -87,6 +88,8 @@ body{
     transition: 0.5s;
 }
 
+
+
 @media (max-width: 950px){
     body{
         overflow: hidden;
@@ -144,6 +147,8 @@ nav{
     padding: 0;
     display: none;  
 }
+
+
 
 @keyframes muestraMenu{
     from{opacity: 0;}
