@@ -43,7 +43,7 @@
                     Voluptates perspiciatis rerum nostrum consequuntur nihil, illum nobis cum quam saepe explicabo asperiores laboriosam repellat sint vero reiciendis delectus id provident ex. Aperiam repudiandae, cumque voluptatum nam exercitationem explicabo laboriosam.</p></article>
                 </div> 
                     <br>
-                    <img src="/Assets/img/Main/Contenido/img1.jpg" alt="setup" width="800px" height="500px">
+                    <img src="./MultimediaGeneral/Setup.png" alt="setup" width="800px" height="500px">
             </section>
             <hr>
             <div class="info">
@@ -82,20 +82,42 @@
             </div>
             <hr>
 
-            <div class="productsA">
+            <div class="upComing">
                 <h2 id="upComingProducts">Próximos productos a la venta</h2>
-                    <p>Aquí encontrarás próximos productos a la venta</p>
-                    <img src="./Assets/img/Main/Contenido/img2.jpg" alt="Camara" width="800" height="530">
-                    <img src="./Assets/img/Main/Contenido/img6.jpg" alt="Camara" width="400" height="550">
-                    <img src="./Assets/img/Main/Contenido/img3.jpg" alt="Camara de video" width="400" height="530">
+                    <p>¿Eres streamer? <br> No hay problema, nuestro equipo ofrece los productos que necesitas. <br> Por eso traemos equipos para grabación a nuestro sitio</p>
+
+                <div class="container__slider">
+
+                    <div class="container">
+                        <input type="radio" name="slider" id="item-1" checked>
+                        <input type="radio" name="slider" id="item-2">
+                        <input type="radio" name="slider" id="item-3">
+            
+                        <div class="cards">
+                            <label class="p-card" for="item-1" id="selector-1">
+                                <img src="./Assets/img/Main/Contenido/img2.jpg">
+                            </label>
+                            <label class="p-card" for="item-2" id="selector-2">
+                                <img src="./Assets/img/Main/Contenido/img6.jpg">
+                            </label>
+                            <label class="p-card" for="item-3" id="selector-3">
+                                <img src="./Assets/img/Main/Contenido/img3.jpg">
+                            </label>
+            
+                        </div>
+                    </div>
+        
+            </div>
+
+            
             </div>
             <hr>
 
-            <div class="productsB">
+            <div class="recomended">
                     <div class="lpProduct">
-                        <img src="./Assets/img/Main/Contenido/#" alt="Setup Gamer">
+                        <img src="./Assets/img/Main/Contenido/img3.jpg" alt="Setup Gamer" height="1000 " width="600px">
                     </div>
-                    <div class="rpProduc">
+                    <div class="rpProduct">
                     <h2 id="recomendedProducts">Producto recomendado</h2>
                     <h4>Algunas de sus caracteísticas</h4>
                     <p>Memoria RAM</p>
@@ -106,39 +128,235 @@
                     <img src="./Assets/img/Main/Contenido/img5.jpg" alt="Tarjeta grafica" width="310" height="200">
                 </div>
             </div>
+            
+            <!-- Cada imagen debe llevar a su respectiva ubicación dentro de la sección de productos -->
+
             <hr>
 
-            <div class="allProdcuts">
-                <h2 id="productsC">Otros productos</h2>
-                <p>Mira los prodctos de nuestra tienda</p>
-            </div>
-            <hr>
 
-            <div class="offersA">
-                <h2 id="offers">Ofertas</h2>
-                <p>Aquí encontrarás las ofertas más recientes de nuestros productos</p>
-                <p>Súper ofertas</p>
 
-                <div class="ofertasProductos">
-                    <h3></h3>
-                    <button>Comprar</button>
-                    <h3></h3>
-                    <button>Comprar</button>
-                    <h3></h3>
-                    <button>Comprar</button>
+                
+            <div class="Carousel">
+                <h2>Productos populares</h2>
+                <p>Mira algunos de nuestros productos</p>
+                <div class="slick-list" id="slick-list">
+                    <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                    </button>
+                    <div class="slick-track" id="track">
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img3.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="#">
+                                    <h4><small>Nombre producto</small>Ver</h4>
+                                    <picture>
+                                        <img src="./Assets/img/Main/Contenido/img1.jpg" alt="#">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                    </button>
                 </div>
             </div>
             <hr>
 
+            <div class="services">
+                <h2 class="sv-h2">Servicios</h2>
+                <p class="sv-p">Con nuestros planes personalizados puedes tener diferentes tipos de beneficios</p>
+
+                <div class="container-sv">
+                    <div class="box">
+                        <div class="sv-c">
+                            <h2>03</h2>
+                            <h3>Silver</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum dicta, consectetur quam illo dignissimos fuga corrupti non nobis dolor reprehenderit doloribus sapiente id inventore nulla, eum incidunt, dolorem ipsa!</p>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <div class="sv-c">
+                            <h2>01</h2>
+                            <h3>Premium</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum dicta, consectetur quam illo dignissimos fuga corrupti non nobis dolor reprehenderit doloribus sapiente id inventore nulla, eum incidunt, dolorem ipsa!</p>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <div class="sv-c">
+                            <h2>02</h2>
+                            <h3>Golden</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum dicta, consectetur quam illo dignissimos fuga corrupti non nobis dolor reprehenderit doloribus sapiente id inventore nulla, eum incidunt, dolorem ipsa!</p>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </main>
-
+            <hr>
     <footer>
-   
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-
-        <p>@copyright 2022</p>
+        <div class="footer-cotainer">
+            <img src="./Assets/img/General/Logo.png" alt="Logo Techouse" >
+            <div class="social-icons-container">
+                <a href="" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <ul class="footer-menu-container">
+                <li class="menu-item">Legal</li>
+                <li class="menu-item">Cookies</li>
+                <li class="menu-item">Privacy</li>
+                <li class="menu-item">Shipping</li>
+                <li class="menu-item">Refounds</li>
+            </ul>
+            <span class="copyright">&copy;2021, Techouse Colombia, todos los derechos reservados</span>
+        </div>
     </footer>
     <script src="https://kit.fontawesome.com/9c91a8f8fa.js" crossorigin="anonymous"></script>
     <script src="/Scripts/main.js"></script>
