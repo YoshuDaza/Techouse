@@ -117,7 +117,11 @@ h1{
     align-items: center;
     max-width: 1200px;
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding: 40px 20px;
+}
+
+.info .card{
+    
 }
 
 .info .card{
@@ -167,6 +171,10 @@ h1{
 */
 
 /*  Slider próximos productos*/
+
+.upComing{
+    margin: 100px 0;
+}
 
 .upComing h2{
     text-align: center;
@@ -260,7 +268,7 @@ input[type=radio]{
 .recomended{
     display: flex;
     justify-content: space-around;
-    margin: 50px 10%;
+    margin: 100px 8%;
     padding: 30px;
 }
 
@@ -276,13 +284,18 @@ input[type=radio]{
     margin: 40px;
 }
 
+.recomended .rpProduct img{
+    max-height: 170px;
+    max-width: auto;
+}
+
 /*Modificar tamaño para las imagenes de muestras*/
 
 /*      Carrusel    */
 
 .Carousel{
     width: 100%;
-    margin: 10px;
+    margin: 100px 0;
 }
 .Carousel h2{
     font-size: 26px;
@@ -384,7 +397,7 @@ input[type=radio]{
 /*  Planes  */
 
 .services{
-    margin: 40px 21%;
+    margin: 100px 21%;
     padding: 0;
 }
 
@@ -515,89 +528,88 @@ input[type=radio]{
 
 /*  Footer  */
 
+.ft-c{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
 .footer{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 2rem 8%; 
-    background-color: #0e0e0e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	background-color: #24262b;
+    padding: 30px 0;
 }
 
-/* footer img{
-    display: flex;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 1em;
-}
-Posible error en la propiedad position del padre
-
-*/
-
-.social-icons-container, .footer-menu-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 1em;
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
 }
 
-.social-icon{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid #f2f2f2;
-    background: #060c21;
-    background-position: center;
-    margin: 1rem;
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
 }
 
-.social-icon:hover{
-    background-color: #121212;
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
 }
 
-/* .footer-container {
-    font-size: 30px;
-    text-align: center;
-    color: purple;
-} 
-
-    La propiedad funciona cuando se simplifica la codificación entre los elementos "a" e "i"
-
-*/
-
-.footer-menu-container{
-    list-style-type: none;
-    color: #f2f2f2;
-    font-size: 18px;
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
 }
 
-.menu-item{
-    margin: 1rem 1.5rem;
-    cursor: pointer;
-    opacity: 0.6;
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
 }
 
-.menu-item:hover{
-    opacity: 1;
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
 }
 
-.copyright{
-    text-align: center;
-    color: #f2f2f2;
-    opacity: 0.3;
-    text-align: center;
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
-
 
 @media (max-width: 950px){
-    /* body{
-        overflow: hidden; Revisar compatibilidad
-    } */
 
     .logo{
         padding: 0x;
@@ -656,6 +668,19 @@ nav{
     display: none;  
 }
 
+/*      Responsive footer    */
+
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
 
 
 @keyframes muestraMenu{
