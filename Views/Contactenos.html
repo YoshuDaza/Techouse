@@ -2,67 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactanos</title>
     <link rel="stylesheet" href="../Styles/contactenos.css">
-    <title>Contáctenos - Techouse Colombia</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <nav>
-                <ol>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./Productos.html">Productos</a></li>
-                    <li><a href="./Asesorias.html">Asesorias</a></li>
-                    <li><a href="./Contactenos.html">Contáctenos</a></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>
-                    <li><a href="./Login.html">Iniciar sesion</a></li>
-                </ol>
-            </nav>
+    
+    <div class="content">
+        <h1 class="logo">Contac<span>tanos</span></h1>
 
-    </header>
-    <main>
-        <div class="container-form">
-            <div class="info-form">
-            <h2>Contáctanos</h2>
-            <p>Te invitamos a que te comuniques con nuestros asesores</p>
-            <form id="Contactos">
-            <label for="name">Primer Nombre</label>
-            <input type="text"
-            id="name"
-            value=""
-            placeholder="Primer nombre"
-            minlength="3"
-            maxlength="20"
-            required pattern="[a-z A-Z]{3-20}"
-            title="Se admiten solo letras" 
-            autocomplete="off">
-    
-            <label for="name">Segundo Nombre</label>
-            <input type="text"
-            id="name"
-            value=""
-            placeholder="Segundo Nombre"
-            minlength="3"
-            maxlength="20"
-            required pattern="[a-z A-Z]{3-20}"
-            title="Se admiten solo letras" 
-            autocomplete="off">
-    
-            <label for="mail">Telefono</label>
-            <input type="text" name="Telefono" placeholder="Telefono">
-    
-    
-            <label for="mail">Correo electronico</label>
-            <input type="email" id="email" placeholder="Email"><br><br>
-            <textarea name="mensaje" placeholder="Dejanos un mensaje..."></textarea>
-            <button type="submit" id="enviar">Enviar datos</button>
-    </main>
-    <footer>
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contactanos</h3>
+                
+                <form action="">
+                    <p>
+                        <label> Nombre : </label>
+                        <input type="text" name="Nombre"
+                        value=""
+                        placeholder="Nombre"
+                        minlength="3"
+                        maxlength="20"
+                        required pattern="[a-z A-Z]{3-20}"
+                        title="Se admiten solo letras" 
+                         autocomplete="off">
+                    </p>
+                    <p>
+                        <label> Apellido : </label>
+                        <input type="text" name="Apellido"
+                        value=""
+                        placeholder="Apellido"
+                        minlength="3"
+                        maxlength="20"
+                        required pattern="[a-z A-Z]{3-20}"
+                        title="Se admiten solo letras" 
+                        autocomplete="off">
+                    </p>
+                    <p>
+                        <label> Correo Electronico : </label>
+                        <input type="email" name="email"
+                        placeholder="Correo Electronico">
+                    </p>
+                    <p>
+                        <label> Telefono :</label>
+                        <input type="tel" name="phone"
+                        placeholder="Telefono">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje: </label> 
+                        <textarea name="message" rows="3"
+                        placeholder="Dejanos un mensaje...."></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
 
-    </footer>
-    <script src="https://kit.fontawesome.com/9c91a8f8fa.js" crossorigin="anonymous"></script>
-    <script src="../Scripts/contactenos.js"></script>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Informacion</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Cra. 33a #30-20,Uniempresarial</li>
+                    <li><i class="fas fa-phone"></i> (+57) 77 27 26</li>
+                    <li><i class="fas fa-envelope-open-text"></i> Techousecol@gmail.com</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                <p>Techouse.com</p>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
