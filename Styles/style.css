@@ -101,6 +101,11 @@ main img{
     padding: 30px;
 }
 
+.inicio img{
+    max-width: 600px;
+    max-height: 400px;
+}
+
 h1{
     font-size: 45px;
 }
@@ -122,6 +127,8 @@ h1{
 
 .info .card{
     position: relative;
+    left: 35%;
+    right: 35%;
     width: 320px;
     height: 440px;
     box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
@@ -605,6 +612,18 @@ ul{
 	background-color: #ffffff;
 }
 
+@media (max-width: 1100px){
+    .inicio{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inicio img{
+        max-width: 90%;
+        max-height: 100%;
+    }
+}
+
 @media (max-width: 950px){
 
     .logo{
@@ -663,6 +682,8 @@ nav{
     padding: 0;
     display: none;  
 }
+
+
 
 /*      Responsive footer    */
 
