@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../Styles/login.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav class="header">
             <a href="index.html" class="logo">
                 <img src="./Assets/img/General/Logo.png" alt="Logo">
@@ -25,7 +25,7 @@
                     <span class="br-3"></span>
                 </button>
         </nav>        
-    </header>
+    </header> -->
     <div class="container">
         <div class="blueBg">
             <div class="box signin">
@@ -39,17 +39,17 @@
         </div>
         <div class="formBx">
             <div class="form signinForm">
-                <form>
+                <form id="formIn">
                     <h3>Iniciar Sesion</h3>
-                    <input type="text" placeholder="Usuario">
-                    <input type="password" placeholder="Contraseña">
+                    <input type="text" placeholder="Usuario" id="userIn">
+                    <input type="password" placeholder="Contraseña" id="passwordIn">
                     <input type="submit" value="Iniciar sesion">
                     <a href="#" class="forgot">Olvido Contraraseña</a>
                 </form>
             </div>
 
             <div class="form signupForm">
-                <form>
+                <form id="formUp">
                     <h3>Registrarse</h3>
                     <input type="text" placeholder="Usuario">
                     <input type="mail" placeholder="Correo electronico">
@@ -61,21 +61,6 @@
         </div>
     </div>
 
-    <script>
-        const signinBtn = document.querySelector('.signinBtn');
-        const signupBtn = document.querySelector('.signupBtn');
-        const formBx = document.querySelector('.formBx');
-        const body = document.querySelector('body')
-
-        signupBtn.onclick = function(){
-            formBx.classList.add('active')
-            body.classList.add('active')
-        }
-
-        signinBtn.onclick = function(){
-            formBx.classList.remove('active')
-            body.classList.remove('active')
-        }
-    </script>
+    <script src="../Scripts/login.js">    </script>
 </body>
 </html>

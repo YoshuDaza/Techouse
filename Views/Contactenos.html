@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <nav class="header">
             <a href="index.html" class="logo">
                 <img src="./Assets/img/General/Logo.png" alt="Logo">
@@ -33,7 +33,7 @@
                     <span class="br-3"></span>
                 </button>
         </nav>        
-    </header>
+    </header> -->
     <div class="content">
         <h1 class="logo">Contac<span>tanos</span></h1>
 
@@ -41,15 +41,13 @@
             <div class="contact-form">
                 <h3>Contactanos</h3>
                 
-                <form action="">
+                <form action="" id="form">
                     <p>
                         <label> Nombre : </label>
                         <input type="text" name="Nombre"
                         value=""
+                        id="nombre"
                         placeholder="Nombre"
-                        minlength="3"
-                        maxlength="20"
-                        required pattern="[a-z A-Z]{3-20}"
                         title="Se admiten solo letras" 
                          autocomplete="off">
                     </p>
@@ -57,22 +55,20 @@
                         <label> Apellido : </label>
                         <input type="text" name="Apellido"
                         value=""
+                        id="apellido"
                         placeholder="Apellido"
-                        minlength="3"
-                        maxlength="20"
-                        required pattern="[a-z A-Z]{3-20}"
                         title="Se admiten solo letras" 
                         autocomplete="off">
                     </p>
                     <p>
                         <label> Correo Electronico : </label>
                         <input type="email" name="email"
-                        placeholder="Correo Electronico">
+                        placeholder="Correo Electronico" id="mail">
                     </p>
                     <p>
                         <label> Telefono :</label>
                         <input type="tel" name="phone"
-                        placeholder="Telefono">
+                        placeholder="Telefono" id="phon">
                     </p>
                     <p class="block">
                        <label>Mensaje: </label> 
@@ -100,6 +96,6 @@
         </div>
 
     </div>
-
+    <script src="../Scripts/contactenos.js"></script>
 </body>
 </html>
