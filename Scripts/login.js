@@ -102,7 +102,7 @@ userUp.addEventListener('change',(e)=>{
     let valorNames2= e.target.value;
     objecValidUp.usuarioUp= valorNames2.match(names2Regex) ? true : false;
     console.log(Object.values(objecValidUp));
-
+});
 
 mailUp.addEventListener('change',function(e){
     console.log(e.target.value);
@@ -133,8 +133,3 @@ passwordUp2.addEventListener('change',function(e){
     }
     console.log(Object.values(objecValidUp));
 });
-
-
-
-
-
