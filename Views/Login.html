@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/login.css">
+</head>
+<body>
+    <header>
+        <nav class="header">
+            <a href="index.html" class="logo">
+                <img src="./Assets/img/General/Logo.png" alt="Logo">
+            </a>
+            <ol class="enlaces-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./Productos.html">Productos</a></li>
+                <li><a href="./Asesorias.html">Asesorias</a></li>
+                <li><a href="./Contactenos.html">Contáctenos</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>
+            </ol>
+            <a href="./Login.html" class="button">Iniciar sesion</a>
+                <button class="ham" type="button">
+                    <span class="br-1"></span>
+                    <span class="br-2"></span>
+                    <span class="br-3"></span>
+                </button>
+        </nav>       
+    </header>
+    <main calss="main">
+    <div class="container">
+        <div class="blueBg">
+            <div class="box signin">
+                <h2>¿Ya tienes una cuenta?</h2>
+                <button class="signinBtn">Iniciar Sesion</button>
+            </div>
+            <div class="box signup">
+                <h2>¿No tienes cuenta?</h2>
+                <button class="signupBtn">Registrarse</button>
+            </div>
+        </div>
+        <div class="formBx">
+            <div class="form signinForm">
+                <form>
+                    <h3>Iniciar Sesion</h3>
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <input type="submit" value="Iniciar sesion">
+                    <a href="#" class="forgot">Olvido Contraraseña</a>
+                </form>
+            </div>
+
+            <div class="form signupForm">
+                <form>
+                    <h3>Registrarse</h3>
+                    <input type="text" placeholder="Usuario">
+                    <input type="mail" placeholder="Correo electronico">
+                    <input type="password" placeholder="Contraseña">
+                    <input type="password" placeholder="Confirmar Contraseña">
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>  
+    </main>
+
+    <footer class="footer">
+        <div class="ft-c">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contactanos</h4>
+                    <ul>
+                        <li><a href="https://goo.gl/maps/7XskP2QCD8H3rMEu7">Cra. 33a #30-20</a></li>
+                        <li>Techousecol@gmail.com</li>
+                        <li>Uniempresarial</li>
+                        <li>3212851053</li>
+                        <li>Bogotá</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Desarrolladores</h4>
+                    <ul>
+                        <li><a href="#">Yoshu Daza</a></li>
+                        <li><a href="#">Kevin Rodriguez</a></li>
+                        <li><a href="#">Juan Sierra</a></li>
+                        <li><a href="#">Diego Enciso</a></li>
+                        <li><a href="#">Juan David Camacho</a></li>
+                        <li><a href="#">Dairon Peña</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="#">CPU</a></li>
+                        <li><a href="#">Monitores</a></li>
+                        <li><a href="#">Proceadores</a></li>
+                        <li><a href="#">Tarjetas gráficas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>   
+
+    <script>
+        const signinBtn = document.querySelector('.signinBtn');
+        const signupBtn = document.querySelector('.signupBtn');
+        const formBx = document.querySelector('.formBx');
+        const body = document.querySelector('body')
+
+        signupBtn.onclick = function(){
+            formBx.classList.add('active')
+            body.classList.add('active')
+        }
+
+        signinBtn.onclick = function(){
+            formBx.classList.remove('active')
+            body.classList.remove('active')
+        }
+    </script>
+
+
+</body>
+</html>

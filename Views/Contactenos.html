@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="../Styles/contactenos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <a href="index.html" class="logo">
+                <img src="./Assets/img/General/Logo.png" alt="Logo">
+            </a>
+            <ol class="enlaces-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./Productos.html">Productos</a></li>
+                <li><a href="./Asesorias.html">Asesorias</a></li>
+                <li><a href="./Contactenos.html">Contáctenos</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>
+            </ol>
+            <a href="./Login.html" class="button">Iniciar sesion</a>
+                <button class="ham" type="button">
+                    <span class="br-1"></span>
+                    <span class="br-2"></span>
+                    <span class="br-3"></span>
+                </button>
+        </nav>        
+    </header>
+    <div class="content">
+        <h1 class="logo">Contac<span>tanos</span></h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contactanos</h3>
+                
+                <form action="">
+                    <p>
+                        <label> Nombre : </label>
+                        <input type="text" name="Nombre"
+                        value=""
+                        placeholder="Nombre"
+                        minlength="3"
+                        maxlength="20"
+                        required pattern="[a-z A-Z]{3-20}"
+                        title="Se admiten solo letras" 
+                         autocomplete="off">
+                    </p>
+                    <p>
+                        <label> Apellido : </label>
+                        <input type="text" name="Apellido"
+                        value=""
+                        placeholder="Apellido"
+                        minlength="3"
+                        maxlength="20"
+                        required pattern="[a-z A-Z]{3-20}"
+                        title="Se admiten solo letras" 
+                        autocomplete="off">
+                    </p>
+                    <p>
+                        <label> Correo Electronico : </label>
+                        <input type="email" name="email"
+                        placeholder="Correo Electronico">
+                    </p>
+                    <p>
+                        <label> Telefono :</label>
+                        <input type="tel" name="phone"
+                        placeholder="Telefono">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje: </label> 
+                        <textarea name="message" rows="3"
+                        placeholder="Dejanos un mensaje...."></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Informacion</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Cra. 33a #30-20,Uniempresarial</li>
+                    <li><i class="fas fa-phone"></i> (+57) 77 27 26</li>
+                    <li><i class="fas fa-envelope-open-text"></i> Techousecol@gmail.com</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                <p>Techouse.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="ft-c">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contactanos</h4>
+                    <ul>
+                        <li><a href="https://goo.gl/maps/7XskP2QCD8H3rMEu7">Cra. 33a #30-20</a></li>
+                        <li>Techousecol@gmail.com</li>
+                        <li>Uniempresarial</li>
+                        <li>3212851053</li>
+                        <li>Bogotá</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Desarrolladores</h4>
+                    <ul>
+                        <li><a href="#">Yoshu Daza</a></li>
+                        <li><a href="#">Kevin Rodriguez</a></li>
+                        <li><a href="#">Juan Sierra</a></li>
+                        <li><a href="#">Diego Enciso</a></li>
+                        <li><a href="#">Juan David Camacho</a></li>
+                        <li><a href="#">Dairon Peña</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="#">CPU</a></li>
+                        <li><a href="#">Monitores</a></li>
+                        <li><a href="#">Proceadores</a></li>
+                        <li><a href="#">Tarjetas gráficas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <script src="../Scripts/contactenos.js"></script>
+</body>
+</html>
