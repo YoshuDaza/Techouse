@@ -1,3 +1,15 @@
+//Botón de menú
+const ham = document.querySelector('.ham');
+const enlaces = document.querySelector('.enlaces-menu');
+const barras = document.querySelectorAll('.ham span');
+const login = document.querySelector('.button');
+
+ham.addEventListener('click', () => {
+    enlaces.classList.toggle('activado');
+    barras.forEach(child => {child.classList.toggle('animado')});
+});
+
+
 
 //Ejecutando funciones
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
@@ -10,6 +22,12 @@ var formulario_register = document.querySelector(".formulario__register");
 var contenedor_login_register = document.querySelector(".contenedor__login-register");
 var caja_trasera_login = document.querySelector(".caja__trasera-login");
 var caja_trasera_register = document.querySelector(".caja__trasera-register");
+
+
+
+ham.addEventListener('click', () => {
+    login.classList.toggle('Login');
+});
 
     //FUNCIONES
 
@@ -77,6 +95,7 @@ const mailUp = document.getElementById('mailUp');
 
 const passwordIn = document.getElementById('passwordIn');
 const passwordUp = document.getElementById('passwordUp');
+
 
 
 //Control de validacion
@@ -178,3 +197,5 @@ passwordUp.addEventListener('change',function(e){
     }
     console.log(Object.values(objecValidUp));
 });
+
+
