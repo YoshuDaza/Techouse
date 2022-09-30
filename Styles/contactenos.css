@@ -3,7 +3,7 @@ html{
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
@@ -157,11 +157,11 @@ ul {
     background: none;
     outline: 0;
     color: #fff;
-    border-bottom: 1px solid #00003d;
+    border-bottom: 1px solid #f2aa1f;
 }
 
 .contact-form form button {
-    background:#00003d;
+    background:#a07216;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -169,7 +169,7 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: #00003d;
+    background: #ba222e ;
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;
