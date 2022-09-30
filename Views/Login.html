@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="../Styles/login.css">
+    <title>Login y Register - MagtimusPro</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+
+    <link rel="stylesheet" href="../Styles/login.css">
 </head>
 <body>
     <header>
@@ -27,41 +32,41 @@
         </nav>        
     </header> 
 
-    <div class="container">
-        <div class="blueBg">
-            <div class="box signin">
-                <h2>¿Ya tienes una cuenta?</h2>
-                <button class="signinBtn">Iniciar Sesion</button>
-            </div>
-            <div class="box signup">
-                <h2>¿No tienes cuenta?</h2>
-                <button class="signupBtn">Registrarse</button>
-            </div>
-        </div>
-        <div class="formBx">
-            <div class="form signinForm">
-                <form id="formIn">
-                    <h3>Iniciar Sesion</h3>
-                    <input type="text" placeholder="Usuario" id="userIn">
-                    <input type="password" placeholder="Contraseña" id="passwordIn">
-                    <input type="submit" value="Iniciar sesion">
-                    <a href="#" class="forgot">Olvido Contraraseña</a>
-                </form>
-            </div>
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿No tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
 
-            <div class="form signupForm">
-                <form id="formUp">
-                    <h3>Registrarse</h3>
-                    <input type="text" placeholder="Usuario" id="userUp">
-                    <input type="mail" placeholder="Correo electronico" id="mailUp">
-                    <input type="password" placeholder="Contraseña" id="passwordUp1">
-                    <input type="password" placeholder="Confirmar Contraseña" id="passwordUp2">
-                    <input type="submit" value="Registrarse">
-                </form>
-            </div>
-        </div>
-    </div>
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login" id="formIn">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Usuario" id="userIn">
+                        <input type="password" placeholder="Contraseña" id="passwordIn">
+                        <button>Entrar</button>
+                    </form>
 
-    <script src="../Scripts/login.js">    </script>
+                    <!--Register-->
+                    <form action="" class="formulario__register" id="formUp">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre completo" id="nameUp">
+                        <input type="text" placeholder="Correo Electronico" id="mailUp">
+                        <input type="text" placeholder="Usuario" id="userUp" id="userUp">
+                        <input type="password" placeholder="Contraseña" id="passwordUp">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+        <script src="../Scripts/login.js"></script>
 </body>
 </html>

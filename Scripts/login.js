@@ -1,21 +1,70 @@
-const signinBtn = document.querySelector('.signinBtn');
-const signupBtn = document.querySelector('.signupBtn');
-const formBx = document.querySelector('.formBx');
-const body = document.querySelector('body')
 
-signupBtn.onclick = function(){
-    formBx.classList.add('active')
-    body.classList.add('active')
+//Ejecutando funciones
+document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
+document.getElementById("btn__registrarse").addEventListener("click", register);
+window.addEventListener("resize", anchoPage);
+
+//Declarando variables
+var formulario_login = document.querySelector(".formulario__login");
+var formulario_register = document.querySelector(".formulario__register");
+var contenedor_login_register = document.querySelector(".contenedor__login-register");
+var caja_trasera_login = document.querySelector(".caja__trasera-login");
+var caja_trasera_register = document.querySelector(".caja__trasera-register");
+
+    //FUNCIONES
+
+function anchoPage(){
+
+    if (window.innerWidth > 850){
+        caja_trasera_register.style.display = "block";
+        caja_trasera_login.style.display = "block";
+    }else{
+        caja_trasera_register.style.display = "block";
+        caja_trasera_register.style.opacity = "1";
+        caja_trasera_login.style.display = "none";
+        formulario_login.style.display = "block";
+        contenedor_login_register.style.left = "0px";
+        formulario_register.style.display = "none";   
+    }
 }
 
-signinBtn.onclick = function(){
-    formBx.classList.remove('active')
-    body.classList.remove('active')
+anchoPage();
+
+
+    function iniciarSesion(){
+        if (window.innerWidth > 850){
+            formulario_login.style.display = "block";
+            contenedor_login_register.style.left = "10px";
+            formulario_register.style.display = "none";
+            caja_trasera_register.style.opacity = "1";
+            caja_trasera_login.style.opacity = "0";
+        }else{
+            formulario_login.style.display = "block";
+            contenedor_login_register.style.left = "0px";
+            formulario_register.style.display = "none";
+            caja_trasera_register.style.display = "block";
+            caja_trasera_login.style.display = "none";
+        }
+    }
+
+    function register(){
+        if (window.innerWidth > 850){
+            formulario_register.style.display = "block";
+            contenedor_login_register.style.left = "410px";
+            formulario_login.style.display = "none";
+            caja_trasera_register.style.opacity = "0";
+            caja_trasera_login.style.opacity = "1";
+        }else{
+            formulario_register.style.display = "block";
+            contenedor_login_register.style.left = "0px";
+            formulario_login.style.display = "none";
+            caja_trasera_register.style.display = "none";
+            caja_trasera_login.style.display = "block";
+            caja_trasera_login.style.opacity = "1";
+        }
 }
 
 //Validaciones 
-
-
 const formIn = document.getElementById('formIn');
 const formUp = document.getElementById('formUp');
 
@@ -23,12 +72,12 @@ const btn = document.getElementById('btnDatos');
 
 const userIn = document.getElementById('userIn');
 const userUp = document.getElementById('userUp');
-
+const nameUp = document.getElementById('nameUp');
 const mailUp = document.getElementById('mailUp');
 
 const passwordIn = document.getElementById('passwordIn');
-const passwordUp1 = document.getElementById('passwordUp1');
-const passwordUp2 = document.getElementById('passwordUp2');
+const passwordUp = document.getElementById('passwordUp');
+
 
 //Control de validacion
 
@@ -55,7 +104,7 @@ const validForm = ()=>{
 
 userIn.addEventListener('change',(e)=>{
     console.log(e.target.value);
-    const names1Regex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})$/g;
+    const names1Regex = /^[a-zA-Z0-9\_\-]{4,16}$/g;
     let valorNames1= e.target.value;
     objecValidIn.usuarioIn= valorNames1.match(names1Regex) ? true : false;
     console.log(Object.values(objecValidIn));
@@ -74,10 +123,10 @@ passwordIn.addEventListener('change',function(e){
 
 
 const objecValidUp ={
+    nombreUp:false,
     usuarioUp:false,
     correo:false,
-    contraUp1:false,
-    contraUp2:false
+    contraUp:false
 };
 
 const validForm1 = ()=>{
@@ -95,10 +144,17 @@ formUp.addEventListener('submit',(e)=>{
     }
 })
 
+nameUp.addEventListener('change',(e)=>{
+    console.log(e.target.value);
+    const nameRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})$/g;
+    let valorName= e.target.value;
+    objecValidUp.nombreUp= valorName.match(nameRegex) ? true : false;
+    console.log(Object.values(objecValidUp));
+});
 
 userUp.addEventListener('change',(e)=>{
     console.log(e.target.value);
-    const names2Regex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})$/g;
+    const names2Regex = /^[a-zA-Z0-9\_\-]{4,16}$/g;
     let valorNames2= e.target.value;
     objecValidUp.usuarioUp= valorNames2.match(names2Regex) ? true : false;
     console.log(Object.values(objecValidUp));
@@ -112,24 +168,13 @@ mailUp.addEventListener('change',function(e){
     console.log(Object.values(objecValidUp));
 });
 
-passwordUp1.addEventListener('change',function(e){
+passwordUp.addEventListener('change',function(e){
     console.log(e.target.value);
-    const passwordUp1Regex = /^.{4,15}$/g;
-    if ((passwordUp1.value.match(passwordUp1Regex))){
-        objecValidUp.contraUp1 = true;
+    const passwordUpRegex = /^.{4,15}$/g;
+    if ((passwordUp.value.match(passwordUpRegex))){
+        objecValidUp.contraUp = true;
     }else{
-        objecValidUp.contraUp1 = false;
-    }
-    console.log(Object.values(objecValidUp));
-});
-
-passwordUp2.addEventListener('change',function(e){
-    console.log(e.target.value);
-    const passwordUp2Regex = /^.{4,15}$/g;
-    if ((passwordUp2.value.match(passwordUp2Regex))){
-        objecValidUp.contraUp2 = true;
-    }else{
-        objecValidUp.contraUp2 = false;
+        objecValidUp.contraUp = false;
     }
     console.log(Object.values(objecValidUp));
 });
