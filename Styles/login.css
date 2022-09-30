@@ -1,3 +1,45 @@
+.logo img{
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 8vh;
+    background-color: rgb(16, 34, 43);
+}
+.enlaces-menu li{
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+}
+
+
+.enlaces-menu li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+}
+.button{
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+    margin-right: 40px;
+    border: 2px solid rgb(161, 161, 161);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
 *
 {
     margin: 0;
@@ -59,7 +101,7 @@ body .active
     cursor: pointer;
     padding: 10px 20px;
     color: black;
-    background-color: aqua;
+    background-color: rgb(13, 117, 117);;
     font-size: 16px;
     font-weight: 500;
     border: none;
