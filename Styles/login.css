@@ -100,7 +100,7 @@ main{
 .contenedor__todo{
     width: 100%;
     max-width: 800px;
-    margin: 150px;
+    margin:auto; 
     position: relative;
 }
 

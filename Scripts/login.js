@@ -100,45 +100,45 @@ const passwordUp = document.getElementById('passwordUp');
 
 //Control de validacion
 
-const objecValidIn ={
-    usuarioIn:false,
-    contraIn:false,
-};
+// const objecValidIn ={
+//     usuarioIn:false,
+//     contraIn:false,
+// };
 
-formIn.addEventListener('submit',(e)=>{
-    e.preventDefault();
-    if (validForm() === -1){
-        alert('Enviando el formulario');
-    }else{
-        alert('Error en valores del formulario');
-    }
-})
+// formIn.addEventListener('submit',(e)=>{
+//     e.preventDefault();
+//     if (validForm() === -1){
+//         alert('Enviando el formulario');
+//     }else{
+//         alert('Error en valores del formulario');
+//     }
+// })
 
-const validForm = ()=>{
-    const values = Object.values(objecValidIn);
-    let response = values.findIndex(e => e === false);
-    return response;
-};
+// const validForm = ()=>{
+//     const values = Object.values(objecValidIn);
+//     let response = values.findIndex(e => e === false);
+//     return response;
+// };
 
 
-userIn.addEventListener('change',(e)=>{
-    console.log(e.target.value);
-    const names1Regex = /^[a-zA-Z0-9\_\-]{4,16}$/g;
-    let valorNames1= e.target.value;
-    objecValidIn.usuarioIn= valorNames1.match(names1Regex) ? true : false;
-    console.log(Object.values(objecValidIn));
-});
+// userIn.addEventListener('change',(e)=>{
+//     console.log(e.target.value);
+//     const names1Regex = /^[a-zA-Z0-9\_\-]{4,16}$/g;
+//     let valorNames1= e.target.value;
+//     objecValidIn.usuarioIn= valorNames1.match(names1Regex) ? true : false;
+//     console.log(Object.values(objecValidIn));
+// });
 
-passwordIn.addEventListener('change',function(e){
-    console.log(e.target.value);
-    const passwordInRegex = /^.{4,15}$/g;
-    if ((passwordIn.value.match(passwordInRegex))){
-        objecValidIn.contraIn = true;
-    }else{
-        objecValidIn.contraIn = false;
-    }
-    console.log(Object.values(objecValidIn));
-});
+// passwordIn.addEventListener('change',function(e){
+//     console.log(e.target.value);
+//     const passwordInRegex = /^.{4,15}$/g;
+//     if ((passwordIn.value.match(passwordInRegex))){
+//         objecValidIn.contraIn = true;
+//     }else{
+//         objecValidIn.contraIn = false;
+//     }
+//     console.log(Object.values(objecValidIn));
+// });
 
 
 const objecValidUp ={
