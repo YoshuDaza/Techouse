@@ -110,7 +110,7 @@ ul {
 }
 
 .logo span {
-    color:#f2aa1f;
+    color:#ba222e;
 }
 
 .contact-wrapper {
@@ -144,8 +144,8 @@ ul {
 }
 
 .contact-form form .block button:hover{
-    background-color: #11171a;
-    transition: 0.8s;
+    background-color: rgb(139, 134, 134);
+    transition: 0.6s;
 }
 
 .contact-form form button,
@@ -157,11 +157,11 @@ ul {
     background: none;
     outline: 0;
     color: #fff;
-    border-bottom: 1px solid #f2aa1f;
+    border-bottom: 1px solid #ba222e;
 }
 
 .contact-form form button {
-    background:#a07216;
+    background:#ba222e;
     border: 0;
     text-transform: uppercase;
     padding: 1em;

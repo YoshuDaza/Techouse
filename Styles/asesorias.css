@@ -32,27 +32,6 @@ a:hover {
 /* * ============ HEADER ========== */
 /* * ============================== */
 
-.navbar {
-	background: #5ce71b;
-	position: sticky;
-	top: 0;
-}
-
-.navbar a {
-	color: #fff;
-	display: inline-block;
-	padding: 20px;
-	width: 100%;
-	text-align: center;
-	color: #000;
-	transition: .3s ease-out all;
-}
-
-.navbar a:hover {
-	background: #bddbf2;
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-}
 
 .contenedor {
 	max-width: 1000px;
@@ -239,10 +218,6 @@ aside .indice a {
 /* * ========== FOOTER ============ */
 /* * ============================== */
 
-footer .navbar{
-	position: sticky;
-	bottom: 0;
-}
 
 .ft-c{
 	max-width: 1170px;
@@ -369,16 +344,6 @@ ul{
     }
 }
 @media screen and (max-width: 900px){
-	.navbar .contenedor {
-		flex-wrap: wrap;
-		margin: 0;
-		width: 100%;
-	}
-
-	.navbar a {
-		width: auto;
-		flex: 1;
-	}
 
 	.contenedor-imagen {
 		height: 50vh;

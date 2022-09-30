@@ -100,8 +100,9 @@ main{
 .contenedor__todo{
     width: 100%;
     max-width: 800px;
-    margin:auto; 
+    margin: 4em 550px; 
     position: relative;
+    justify-content: center;
 }
 
 .caja__trasera{
