@@ -7,7 +7,6 @@ html{
     box-sizing: inherit;
 }
 
-
 body{
     margin: 0;
     padding: 0;
@@ -116,59 +115,6 @@ h1{
     margin: 50px 5%;
     padding: 0 2em;
 }
-
-/*  Misión visión y formas de pago  */
-
-/* .info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    padding: 40px 20px;
-}
-
-.info .card{
-    position: relative;
-    left: 35%;
-    right: 35%;
-    width: 320px;
-    height: 440px;
-    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
-                inset -5px -5px 5px rgba(255,255,255,0.08),
-                5px 5px 5px rgba(0,0,0,0.05),
-                -5px -5px 5px rgba(255,255,255,0.08);
-    border-radius: 15px;
-    margin: 30px;
-}
-    
-.info .card .box{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    background: #61616115;
-    box-shadow: 0 10px 20px rgba(103, 103, 104, 0.8s);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.info .card .box .content{
-    padding: 20px;
-    text-align: center;
-}
-
-.info .card .box .content h2{
-     position: absolute;
-     top: -140px;
-     right: 10px;
-     font-size: 8em;
-     color: rgba(255, 255, 255, 0.01);
-} */
-
 /*  Slider próximos productos*/
 
 .upComing{
@@ -294,7 +240,6 @@ input[type=radio]{
     max-width: auto;
 }
 
-/*Modificar tamaño para las imagenes de muestras*/
 
 /*      Carrusel    */
 
@@ -316,11 +261,6 @@ input[type=radio]{
     margin: 30px;
     text-align: center;
 }
-
-/* .Carousel .slick-track img{
-    max-width: 240px;
-    max-height: 300px;
-} */
 
 /* imagenes */
 
